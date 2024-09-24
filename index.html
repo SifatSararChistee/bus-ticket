@@ -115,7 +115,7 @@
 
       <!-- cards -->
       <section
-        class="mx-auto w-11/12 max-w-screen-lg flex flex-col lg:flex-row justify-center gap-6 relative lg:bottom-12 md:bottom-12"
+        class="mx-auto w-11/12 max-w-screen-lg flex flex-col lg:flex-row justify-center gap-6 relative lg:bottom-12 md:bottom-12 mb-5"
       >
         <div class="stats shadow border-b-4 border-lime-500">
           <div class="stat flex items-center">
@@ -149,13 +149,15 @@
     <main>
       <!-- offers section -->
       <section
-        class="mx-auto w-11/12 max-w-screen-lg flex flex-col justify-center items-center gap-4"
+        class="mx-auto w-11/12 max-w-screen-lg flex flex-col justify-center items-center gap-4 mb-5"
       >
         <h1 class="text-3xl font-bold text-center mb-6">Best offers for you</h1>
-        <div class="flex gap-8">
+        <div
+          class="flex gap-8 flex-col justify-center items-center md:flex-row lg:flex-row"
+        >
           <!-- offer1 -->
           <div
-            class="flex justify-between items-center rounded-3xl w-1/2 p-6 bg-[#FFBF0F]"
+            class="flex justify-between items-center rounded-3xl lg:w-1/2 md:w-1/2 p-6 bg-[#FFBF0F]"
           >
             <div
               class="w-3/5 bg-[#FFBF0F] pl-7 border-r-2 border-dashed border-white rounded-"
@@ -171,7 +173,7 @@
           </div>
           <!-- offer2 -->
           <div
-            class="flex justify-between items-center rounded-3xl w-1/2 p-6 bg-[#F78C9C]"
+            class="flex justify-between items-center rounded-3xl p-6 bg-[#F78C9C] lg:w-1/2 md:w-1/2"
           >
             <div
               class="w-3/5 bg-[#F78C9C] pl-7 border-r-2 border-dashed border-white rounded-"
@@ -191,6 +193,88 @@
         >
           See All Offers
         </button>
+      </section>
+      <!-- ticket section -->
+      <section
+        class="bg-[#F7F8F8] border-t-4 rounded-t-3xl border-lime-600 max-w-screen-2xl mx-auto"
+      >
+        <!-- ticket info tittle -->
+        <div class="my-6">
+          <h2 class="text-center text-3xl font-extrabold space-y-5">
+            P.H Paribahan
+          </h2>
+          <p class="text-center text-base text-gray-600 font-normal space-y-5">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated testing features allow for a streamlined .
+          </p>
+        </div>
+        <!-- ticket info details -->
+        <div
+          class="bg-white w-11/12 mx-auto max-w-screen-lg flex flex-col lg:flex-row md:justify-between lg:justify-between rounded-xl p-6"
+        >
+          <!-- left side -->
+          <div
+            class="flex lg:w-9/12 md:w-9/12 w-full flex-col p-5 rounded-l-xl"
+          >
+            <!-- first row -->
+            <div
+              class="flex lg:justify-between md:lg:justify-between lg:flex-row md:flex-row flex-col w-full mb-4"
+            >
+              <div class="flex gap-4">
+                <div><img src="images/bus-logo.png" alt="" /></div>
+                <div>
+                  <h2 class="text-xl font-bold">Greenline Paribahan</h2>
+                  <p class="text-base font-normal">
+                    Coach-009-WEB | AC_Business
+                  </p>
+                </div>
+              </div>
+              <button
+                class="btn bg-lime-100 border-2 border-lime-500 font-semibold text-lg text-lime-500"
+              >
+                <img src="images/seat-green.png" alt="" />40 Seats left
+              </button>
+            </div>
+            <!-- second row -->
+            <div class="bg-[#F7F8F8] p-5 rounded-lg">
+              <div
+                class="flex justify-between border-b-2 border-dashed border-black pb-4"
+              >
+                <p class="text-lg font-medium">Route</p>
+                <p class="text-lg font-bold">Dhaka - Sylhet</p>
+              </div>
+              <div
+                class="flex justify-between border-b-2 border-dashed border-black py-4"
+              >
+                <p class="text-lg font-medium">Departure Time</p>
+                <p class="text-lg font-bold">9:00 PM</p>
+              </div>
+              <div class="flex justify-between py-4">
+                <p class="bg-slate-200 p-4 rounded-md font-medium">
+                  Boarding Point - Laxmipur
+                </p>
+                <p class="bg-slate-200 p-4 rounded-md font-medium">
+                  Dropping Point - Bogura
+                </p>
+                <p class="bg-slate-200 p-4 rounded-md font-medium">
+                  Est. Time - 11 Hour
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- right side -->
+          <div
+            class="flex flex-col justify-center items-center lg:w-1/4 md:w-1/4 lg:border-l-2 border-lime-600 border-dashed rounded-r-xl"
+          >
+            <img src="images/fare.png" alt="" />
+            <h2 class="text-4xl font-extrabold">550 Taka</h2>
+            <p class="text-xl font-semibold">Per Seat</p>
+          </div>
+        </div>
+
+        <!-- booking section -->
+        <div></div>
       </section>
     </main>
   </body>
