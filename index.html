@@ -275,7 +275,7 @@
 
         <!-- booking section -->
         <div
-          class="bg-white grid grid-cols-5 w-11/12 mx-auto max-w-screen-lg rounded-lg p-6"
+          class="bg-white grid grid-cols-1 lg:grid-cols-5 w-11/12 mx-auto max-w-screen-lg rounded-lg p-6"
         >
           <!-- seat booking -->
           <div class="col-span-3 p-5">
@@ -475,7 +475,13 @@
               <div
                 class="col-span-3 grid grid-cols-3 p-2 text-center font-bold text-base"
               >
-                <p>Seat</p>
+                <p>
+                  Seat
+                  <span
+                    class="relative bottom-2 bg-lime-400 text-white px-2 rounded-md"
+                    >0</span
+                  >
+                </p>
                 <p>Class</p>
                 <p>Price</p>
               </div>
@@ -500,7 +506,9 @@
                     type="text"
                     placeholder="Have any coupon?"
                   />
-                  <button class="btn bg-lime-400">Apply</button>
+                  <button class="btn bg-lime-400 text-white text-base">
+                    Apply
+                  </button>
                 </div>
               </div>
               <div
@@ -548,7 +556,9 @@
                   />
                 </div>
                 <div class="form-control mt-6">
-                  <button class="btn bg-lime-400">Next</button>
+                  <button class="btn bg-lime-400 text-white text-lg">
+                    Next
+                  </button>
                 </div>
               </form>
               <div class="flex text-xs font-normal justify-between">
@@ -560,5 +570,48 @@
         </div>
       </section>
     </main>
+    <!-- footer section -->
+    <footer class="footer bg-[#030712] text-neutral-content p-10">
+      <div class="w-full mx-auto max-w-screen-lg flex flex-col">
+        <div
+          class="w-full flex justify-between border-b-2 border-dashed border-[#FFFFFF4D] pb-5"
+        >
+          <aside>
+            <p class="text-3xl font-extrabold text-white">
+              P-Ticket
+              <br />
+              <span class="text-base font-normal text-white"
+                >P-Ticket is a digital platform to make your daily commuting
+                better.</span
+              >
+            </p>
+          </aside>
+          <div class="space-y-3">
+            <p class="text-white text-xl font-semibold text-nowrap">
+              Download our app
+            </p>
+            <div
+              class="border-2 border-white flex p-4 rounded-md gap-3 justify-center items-center"
+            >
+              <div>
+                <img class="text-white" src="images/playstore.png" alt="" />
+              </div>
+              <div>
+                <p class="text-base font-normal">GET IT ON</p>
+                <p class="text-xl font-bold text-nowrap">Google Play</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between w-full mt-7">
+          <div>@all rights reserved, P-Ticket services limited.2024</div>
+          <div class="flex gap-5">
+            <p>Terms and Conditions</p>
+            <p>Return & refund policy</p>
+            <p>Privacy policy</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
