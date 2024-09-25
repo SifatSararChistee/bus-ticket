@@ -465,7 +465,7 @@
           </div>
 
           <!-- customer info -->
-          <div class="bg-white col-span-2 border-2 border-black p-5">
+          <div class="bg-white col-span-2 p-5">
             <h1
               class="text-3xl font-bold border-b-2 border-dashed border-black mt-1 pb-4"
             >
@@ -496,7 +496,7 @@
               <div class="col-span-3 p-2 text-center text-base">
                 <div class="w-full flex justify-between gap-2">
                   <input
-                    class="w-4/5"
+                    class="w-4/5 rounded-lg px-3"
                     type="text"
                     placeholder="Have any coupon?"
                   />
@@ -516,35 +516,45 @@
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
-                    <span class="label-text">Email</span>
+                    <span class="label-text font-bold">Passenger Name*</span>
                   </label>
                   <input
-                    type="email"
-                    placeholder="email"
+                    type="text"
+                    placeholder="Enter Your Name"
                     class="input input-bordered"
                     required
                   />
                 </div>
                 <div class="form-control">
                   <label class="label">
-                    <span class="label-text">Password</span>
+                    <span class="label-text font-bold">Phone Number*</span>
                   </label>
                   <input
-                    type="password"
-                    placeholder="password"
+                    type="number"
+                    placeholder="Enter your phone number"
                     class="input input-bordered"
                     required
                   />
+                </div>
+                <div class="form-control">
                   <label class="label">
-                    <a href="#" class="label-text-alt link link-hover"
-                      >Forgot password?</a
-                    >
+                    <span class="label-text font-bold">Email ID</span>
                   </label>
+                  <input
+                    type="email"
+                    placeholder="Enter your email id"
+                    class="input input-bordered"
+                    required
+                  />
                 </div>
                 <div class="form-control mt-6">
-                  <button class="btn btn-primary">Login</button>
+                  <button class="btn bg-lime-400">Next</button>
                 </div>
               </form>
+              <div class="flex text-xs font-normal justify-between">
+                <p class="underline">Terms and Conditions</p>
+                <p class="underline">Cancellation Policy</p>
+              </div>
             </div>
           </div>
         </div>
