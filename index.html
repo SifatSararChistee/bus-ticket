@@ -210,7 +210,7 @@
         </div>
         <!-- ticket info details -->
         <div
-          class="bg-white w-11/12 mx-auto max-w-screen-lg flex flex-col lg:flex-row md:justify-between lg:justify-between rounded-xl p-6"
+          class="bg-white w-11/12 mx-auto max-w-screen-lg flex flex-col lg:flex-row md:justify-between lg:justify-between rounded-xl p-6 mb-8"
         >
           <!-- left side -->
           <div
@@ -275,10 +275,10 @@
 
         <!-- booking section -->
         <div
-          class="bg-white grid grid-cols-3 w-11/12 mx-auto max-w-screen-lg rounded-lg p-6"
+          class="bg-white grid grid-cols-5 w-11/12 mx-auto max-w-screen-lg rounded-lg p-6"
         >
           <!-- seat booking -->
-          <div class="col-span-2 p-5">
+          <div class="col-span-3 p-5">
             <h1
               class="text-3xl font-bold border-b-2 border-dashed border-black my-3 pb-3"
             >
@@ -465,7 +465,88 @@
           </div>
 
           <!-- customer info -->
-          <div class="bg-lime-400 col-span-1">seat</div>
+          <div class="bg-white col-span-2 border-2 border-black p-5">
+            <h1
+              class="text-3xl font-bold border-b-2 border-dashed border-black mt-1 pb-4"
+            >
+              Select Your Seat
+            </h1>
+            <div class="grid grid-cols-3 bg-[#F7F8F8] mt-4 rounded-lg">
+              <div
+                class="col-span-3 grid grid-cols-3 p-2 text-center font-bold text-base"
+              >
+                <p>Seat</p>
+                <p>Class</p>
+                <p>Price</p>
+              </div>
+              <div
+                class="col-span-3 grid grid-cols-3 p-2 text-center text-base font-normal"
+              >
+                <p>C2</p>
+                <p>Economy</p>
+                <p>550</p>
+              </div>
+              <div
+                class="col-span-3 grid grid-cols-3 p-2 text-center text-base font-bold"
+              >
+                <p>Total Price</p>
+                <p></p>
+                <p>BDT 550</p>
+              </div>
+              <div class="col-span-3 p-2 text-center text-base">
+                <div class="w-full flex justify-between gap-2">
+                  <input
+                    class="w-4/5"
+                    type="text"
+                    placeholder="Have any coupon?"
+                  />
+                  <button class="btn bg-lime-400">Apply</button>
+                </div>
+              </div>
+              <div
+                class="col-span-3 grid grid-cols-3 p-2 text-center text-base font-bold"
+              >
+                <p>Grand Total</p>
+                <p></p>
+                <p>BDT 550</p>
+              </div>
+            </div>
+            <!-- customer inputs -->
+            <div>
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Email</span>
+                  </label>
+                  <input
+                    type="email"
+                    placeholder="email"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Password</span>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="password"
+                    class="input input-bordered"
+                    required
+                  />
+                  <label class="label">
+                    <a href="#" class="label-text-alt link link-hover"
+                      >Forgot password?</a
+                    >
+                  </label>
+                </div>
+                <div class="form-control mt-6">
+                  <button class="btn btn-primary">Login</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
